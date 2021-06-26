@@ -1,0 +1,70 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    line-height: 4rem;
+    margin: 50px 0px 0px 0px;
+    padding-top: 50px;
+    font-family: 'Roboto';
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 5rem;
+    text-align: center;
+}
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('img/bg-brewdog.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 100vh;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#brew-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+
+input {
+    margin-top: 25px;
+    width: 25vw;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+span p {
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+}
