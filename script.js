@@ -10,13 +10,9 @@ let beerInfo = document.getElementById('beerInfo');
 let root = 'https://api.punkapi.com/v2/beers';
 let url = `${root}`
 
-console.log('Script running....');
-
 async function getBeerData() {
     let query = beerInput.value;
     let endPoint = url + "?" + "beer_name=" + query;
-    console.log('Get beer data started');
-    console.log(endPoint);
     try {
         const response = await fetch(endPoint);
         if(response.ok) {
@@ -40,7 +36,6 @@ const renderBeerInfo = res => {
     for(let name in rawJson) {
         beerNames.push(rawJson[name].name);
     }
-    console.log(beerNames);
     // Convert JSON into a string and add line breaks to make
     // it easier to read
     // Adds data to the span on the page
